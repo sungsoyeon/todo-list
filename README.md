@@ -1,4 +1,4 @@
-# todo-list
+# todo-list soyeon
 Spring Boot + React Todo List
 
 Build a TODO list application
