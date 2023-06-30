@@ -33,7 +33,7 @@ jobs:
           --api_token kkJKMyQBCoThL2d5FA2JHod89wogERae0Af1OlgGNm \
           --project_code $PROJECT_CODE \
           --scan_code $PROJECT_CODE \
-          --path "/src" \
+          --path "/src/" \
           --limit 1 \
           --auto_identification_detect_declaration \
           --auto_identification_detect_copyright \
