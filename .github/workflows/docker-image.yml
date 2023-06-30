@@ -1,8 +1,8 @@
 name: Build and Test
 on: [push, pull_request]
 env:
- PROJECT_CODE: AgentTest
- API_URL: http://localhost/api.php
+ PROJECT_CODE: AgentTest0630
+ API_URL: http://http://fossid.osbc.kr:912/api.php
 jobs:
  run_script:
   runs-on: ubuntu-latest
@@ -30,7 +30,7 @@ jobs:
                   quay.io/fossid/workbench-agent:0.1.0 \
           --api_url http://localhost/api.php \
           --api_user fossid \
-          --api_token IJKf1aZXqfFqKEckX6Rxwp9YK0uer2ds37gd24vzmp \
+          --api_token kkJKMyQBCoThL2d5FA2JHod89wogERae0Af1OlgGNm \
           --project_code $PROJECT_CODE \
           --scan_code $PROJECT_CODE \
           --path "/tmp/analyzed_code" \
