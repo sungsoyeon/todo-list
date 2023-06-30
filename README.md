@@ -1,5 +1,5 @@
 # todo-list soyeon sung!!
-0217!!!
+0630!!!
 Spring Boot + React Todo List
 
 Build a TODO list application
