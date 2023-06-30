@@ -1,4 +1,5 @@
-# todo-list soyeon
+# todo-list soyeon sung!!
+0630!!!
 Spring Boot + React Todo List
 0630++
 Build a TODO list application
