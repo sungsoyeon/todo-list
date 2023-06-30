@@ -25,7 +25,7 @@ jobs:
       run: |
         EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64) &&
         MY_RESULTS_FILE="${{ github.workspace }}/results/wb_result.json" &&
-        docker run -v "${{ github.workspace }}/analyzed_code":"/tmp/analyzed_code" \
+        docker run -v "${{ github.workspace }}/analyzed_code":"/src" \
                    -v "${{ github.workspace }}/results":"/tmp/results" \
                   quay.io/fossid/workbench-agent:0.1.0 \
           --api_url http://fossid.osbc.kr:912/api.php \
@@ -33,7 +33,7 @@ jobs:
           --api_token kkJKMyQBCoThL2d5FA2JHod89wogERae0Af1OlgGNm \
           --project_code $PROJECT_CODE \
           --scan_code $PROJECT_CODE \
-          --path "/src/" \
+          --path "/src" \
           --limit 1 \
           --auto_identification_detect_declaration \
           --auto_identification_detect_copyright \
